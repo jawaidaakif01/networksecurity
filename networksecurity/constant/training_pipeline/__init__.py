@@ -1,7 +1,9 @@
 import os
 import sys
 import numpy as np
-import pandas as p
+import pandas as pd
+
+
 
 """
 Data ingestion related constant start with DATA_INGESTION VAR NAME
@@ -10,7 +12,10 @@ Data ingestion related constant start with DATA_INGESTION VAR NAME
 TARGET_COLUMN = "Result"
 PIPELINE_NAME:str = "NetworkSecurity"
 ARTIFACT_DIR: str = "Artifacts"
-FILE_NAME: str = "NetworkData.csv"
+FILE_NAME: str = "PhisingData.csv"
+
+TRAIN_FILE_NAME : str = 'train.csv'
+TEST_FILE_NAME: str = 'test.csv'
 
 DATA_INGESTION_COLLECTION_NAME: str = "NetworkData"
 DATA_INGESTION_DATABASE_NAME: str = "AakifAI"
