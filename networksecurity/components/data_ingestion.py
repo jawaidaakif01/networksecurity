@@ -72,6 +72,13 @@ class DataIngestion:
             os.makedirs(dir_path, exist_ok=True)
 
             logging.info(f"Exporting train and test file path.")
+            train_set.to_csv(
+                self.data_ingestion_config.training_file_path, index=False, header=True
+            )
+
+            test_set.to_csv(
+                self.data_ingestion_config.testing_file_path, index=False, header=True
+            )
         
         except Exception as e:
             raise NetworkSecurityException(e, sys)
@@ -84,6 +91,6 @@ class DataIngestion:
             self.split_data_as_train_test(dataframe)
             dataingestionartifact=DataIngestionArtifact(trained_file_path=self.data_ingestion_config.training_file_path,
                                                         test_file_path=self.data_ingestion_config.testing_file_path)
-            return DataIngestionArtifact
+            return dataingestionartifact
         except Exception as e:
             raise NetworkSecurityException(e, sys)
