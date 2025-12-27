@@ -1,0 +1,22 @@
+artifact_path: file:C:/Aakif's personal/ML course Udemy/NetworkSecurity(MLProject)/mlruns/0/models/m-a594c14630c94bf0a529f9eaef08202c/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.8.1
+model_id: m-a594c14630c94bf0a529f9eaef08202c
+model_size_bytes: 26791328
+model_uuid: m-a594c14630c94bf0a529f9eaef08202c
+prompts: null
+run_id: 89925120f17c403b9cdbcafb1df49a87
+utc_time_created: '2025-12-27 16:56:15.020054'
